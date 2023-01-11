@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi More - VM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <img src="logo.png" height="70%" width="8%" />
+      <div class="container">
+        <a href="index.html">Home</a>
+          <a href="about.html">About me</a>
+          <a href="tech_stack.html">Tech stack</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Let's Connect</a>
+      </div>
+    </nav>
+
+    <!--hide navbar on scroll -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <!--About me-->
+    <div class="me">
+      <img src="1.jpeg" width="55%" />
+      <div class="intro">
+        <h1 class="pop-outin">Hey, everyone 👋</h1>
+        <br /><br />
+        <p>
+          I am a front-end developer and a programmer who loves to code. Along
+          with programming, content creation always fascinates me so, I
+          regularly write blogs on LinkedIn. I am a open source lover.
+        </p>
+        <br />
+        <p>
+          Currently, exploring backend programming and blockchain technology. I
+          am an enthusiastic and social person who loves to take up new
+          challenges and learn new skills.
+        </p>
+      </div>
+    </div>
+
+    <!--tech stack-->
+  </body>
+</html>

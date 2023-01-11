@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi More - VM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="home">
+      <nav id="navbar">
+        <img src="logo.png" height="70%" width="8%" />
+        <div class="container">
+          <a href="main.html">Home</a>
+          <a href="about.html">About me</a>
+          <a href="tech_stack.html">Tech stack</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <h1 class="heading">
+        <span>Hey, I'm</span>
+        <div class="message">
+          <div class="word1">Vaishnavi More</div>
+          <div class="word2">a web developer</div>
+          <div class="word3">a programer</div>
+        </div>
+      </h1>
+      <ul class="social_handels">
+        <li class="linkedin">
+          <a href="https://www.linkedin.com/in/vaishnavi-more-3a8283225/">
+            <img src="icons/linlinkedin.svg" width="32" height="30">
+          </a>
+        </li>
+        <li class="git">
+          <a href="https://github.com/Vaishnavi-More">
+            <img src="icons/icons8-github-30.png" width="30" height="30">
+          </a>
+        </li>
+        <li class="twitter">
+          <a href="https://twitter.com/vaishna16718348">
+            <img src="icons/icons8-twitter-circled.svg" width="32" height="30">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--hide navbar on scroll -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <!--tech stack-->
+  </body>
+</html>

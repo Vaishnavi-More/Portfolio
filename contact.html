@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi More - VM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <img src="logo.png" height="70%" width="8%" />
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="tech_stack.html">Tech stack</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Let's Connect</a>
+      </div>
+    </nav>
+
+    <!--hide navbar on scroll -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <!--form-->
+    <section id="contact" class="contact">
+      <h1 class="f1">Let's connect</h1>
+      <div class="platforms">
+        <div class="location">
+          <img src="icons/icons8-visit-30.png" width="32" height="30" />
+          <h4>Location</h4>
+          <p>Pune, Maharastra, India</p>
+        </div>
+        <div class="gmail">
+          <img src="icons/icons8-gmail-logo.svg" width="32" height="30" />
+          <h4>Email</h4>
+          <p>more.vaishnavi72@gmail.com</p>
+        </div>
+      </div>
+
+      <!--form-->
+      <form action="/action_page.php" class="email-form">
+        <div class="row">
+          <div class="block ">
+            <label for="name">Your Name</label><br>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="block ">
+            <label for="name">Your Email</label> <br>
+            <input
+              type="text"
+              class="form-control"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="block">
+          <label for="name">Subject</label> <br>
+          <input
+            type="text"
+            class="form-control"
+            name="sub"
+            id="sub"
+            required
+          />
+        </div>
+        <div class="block">
+          <label for="name">Message</label> <br>
+          <textarea
+            class="form-control"
+            name="msg"
+            rows="10"
+            required
+          ></textarea>
+          </div>
+          
+        <div class="block">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

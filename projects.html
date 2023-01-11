@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi More - VM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    
+      <nav id="navbar">
+        <img src="logo.png" height="70%" width="8%" />
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="tech_stack.html">Tech stack</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Let's Connect</a>
+        </div>
+      </nav>
+
+    <!--hide navbar on scroll -->
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <!--tech stack-->
+  </body>
+</html>
